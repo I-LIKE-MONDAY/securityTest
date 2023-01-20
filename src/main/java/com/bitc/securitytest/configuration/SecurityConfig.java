@@ -67,9 +67,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     // 실행 -> sec/member 접속 시 바로 /login 페이지로 이동됨
   }
 
-  @Override
-  protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-    auth.inMemoryAuthentication().withUser("user1").password(passwordEncoder().encode("1111")).roles("USER");
-    auth.inMemoryAuthentication().withUser("admin").password(passwordEncoder().encode("1111")).roles("ADMIN");
-  }
+//  @Override
+//  protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//    auth.inMemoryAuthentication().withUser("user1").password(passwordEncoder().encode("1111")).roles("USER");
+//    auth.inMemoryAuthentication().withUser("admin").password(passwordEncoder().encode("1111")).roles("ADMIN");
+//  }
 }
